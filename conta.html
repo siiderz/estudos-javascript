@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function Titulo(title) {
+        document.write("<h3>" + title + "</h3> <br> <hr> <br>")
+    }
+
+    function pulaLinha() {
+        document.write("<br> <br> <br>")
+    }
+
+    function corpo(texto) {
+        document.write(texto + "<br>")
+    }
+
+
+var numero=20
+
+while (numero>=0) {
+    corpo(numero);
+    numero=numero-1
+}
+corpo("Fim!")

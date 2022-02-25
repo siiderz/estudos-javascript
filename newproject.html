@@ -1,0 +1,40 @@
+<meta charset="UFT-8">
+
+<script>
+
+    function Titulo(title) {
+        document.write("<h3>" + title + "</h3> <br> <hr> <br>")
+    }
+
+    function pulaLinha() {
+        document.write("<br> <br> <br>")
+    }
+
+    function corpo(texto) {
+        document.write(texto + "<br>" )
+    }
+
+    var vitorias = parseInt(prompt("Digite o número de vitórias!"));
+    var empates = parseInt(prompt("Digite o número de empates!"));
+
+    var pontos = vitorias * 3 + empates;
+
+    corpo(" Os pontos do seu time é " + pontos + " Pontos.");
+     pulaLinha();
+    if (pontos > 32){
+       corpo (" Seu time está bom para caralho comparado ao ano passado!");
+    }
+    if (pontos < 32){
+       corpo("Seu time está uma merda comparado ao ano passado!");
+    }
+
+    if (pontos == 32) {
+       corpo("Seu time está a mesma merda!");
+    }
+
+
+    
+
+
+
+</script>

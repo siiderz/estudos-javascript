@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+//Funções//
+
+function texto(frase)
+{
+    document.write(frase);
+}
+
+function pulaLinha()
+{
+document.write("<br> <br>")
+
+}
+
+function titulo(title)
+{
+    document.write("<h3>" + title + "</h3>" );
+}
+
+function calculoPerCapta(pessoa1,pessoa2,pessoa3,pessoa4)
+{
+return (pessoa1 + pessoa2 + pessoa3 + pessoa4)/4
+}
+
+var nome= prompt(" Qual o nome de sua família?")
+var renda1=parseInt(prompt(" Qual é a renda mais alta?"))
+var renda2=parseInt(prompt(" Renda secundária?"))
+var renda3=parseInt(prompt(" Renda Suplementar?"))
+var renda4=parseInt(prompt(" Renda Suplementar?"))
+
+var calculaRenda= calculoPerCapta (renda1,renda2,renda3,renda4)
+
+
+titulo("BEM VINDO À CALCULADORA PERCAPTA MAIS MERDA DO MUNDO")
+
+texto("A renda percapta da familia " + nome + " é " + calculaRenda + "R$!")
+pulaLinha();
+if(calculaRenda > 1380) {
+     texto(" Sua renda percapta está acima da média brasileira!")
+    } else(calculaRenda < 1380)
+    {
+    texto(" Sua renda percapta está abaixo da média brasileira!")
+}    
+if(calculaRenda == 1380)    {
+    texto(" Sua renda percapta está na média brasileira!")
+}
+
+</script>
+
+
